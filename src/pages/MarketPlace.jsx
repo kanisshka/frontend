@@ -1,7 +1,7 @@
 import React from 'react'
 import './MarketPlace.css';
 import Topbar from '../components/Topbar';
-import Powerup from '../components/Powerup';
+import { Link } from 'react-router-dom';
 const MarketPlace = () => {
 
   return (
@@ -11,7 +11,7 @@ const MarketPlace = () => {
                 </div>
       <div className='nav'>
         <ul>
-          <li class="active"><a>Power-Up</a></li>
+        <li class="active"><a><Link>Power-Up</Link></a></li> 
           <li><a href="">Sprite</a></li>
           <li><a  href="">Characteristics</a></li>
         </ul>

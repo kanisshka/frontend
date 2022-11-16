@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Finish from "./pages/Finish";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Powerup from "./components/Powerup";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/game" element={<Game />} />
           <Route exact path="/marketplace" element={<MarketPlace />} />
           <Route exact path="/finish" element={<Finish />} />
+          <Route path="/marketplace/powerup" component={Powerup} />
       </Routes>
     </BrowserRouter>
     </>
