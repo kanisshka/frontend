@@ -7,6 +7,11 @@
     align-items: center;
     margin-bottom:20px;
 }
+.back{
+    width:10%;
+    margin-right:75vw;
+    font-size:20px;
+}
 .user{
     padding-right:20px;
 }
