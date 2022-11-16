@@ -71,15 +71,15 @@ const Card = () => {
                   <h3>{name}</h3>
                   <div className="progresses">
                     <div className="sub-progress">
-                      <h4>Health</h4>
-                      <Progress done={health} />
+                      <h4 className='health'>Health</h4>
+                      <Progress  done={health} />
                     </div>
                     <div className="sub-progress">
-                      <h4>Speed</h4>
-                      <Progress done={speed} />
+                      <h4 className='speed'>Speed</h4>
+                      <Progress  done={speed} />
                     </div>
                     <div className="sub-progress">
-                      <h4>Jump</h4>
+                      <h4  className='jump'>Jump</h4>
                       <Progress done={jump} />
                     </div>
                   </div>
