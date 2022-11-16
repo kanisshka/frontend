@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/game" element={<Game />} />
           <Route exact path="/marketplace" element={<MarketPlace />} />
           <Route exact path="/finish" element={<Finish />} />
-          <Route path="/marketplace/powerup" component={Powerup} />
+          <Route exact path="/marketplace/powerup" component={<Powerup/>} />
       </Routes>
     </BrowserRouter>
     </>

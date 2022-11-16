@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MarketPlace.css';
 import Topbar from '../components/Topbar';
 import { Link } from 'react-router-dom';
 const MarketPlace = () => {
-
+const [present,setPresent] = useState("powerup");
   return (
     <>
       <div className="head">
@@ -11,10 +11,14 @@ const MarketPlace = () => {
                 </div>
       <div className='nav'>
         <ul>
-        <li class="active"><a><Link>Power-Up</Link></a></li> 
-          <li><a href="">Sprite</a></li>
-          <li><a  href="">Characteristics</a></li>
+        <li class="active"><a onClick={()=>setPresent("powerup")}><Link to='/marketplace/powerup'>Power-Up</Link></a></li> 
+          <li><a onClick={()=>setPresent("sprite")} href="">Sprite</a></li>
+          <li><a onClick={()=>setPresent("charactertistics")} href="">Characteristics</a></li>
         </ul>
+      </div>
+      <div className='compont'>
+        if(active==="First")
+       
       </div>
     </>
   )
