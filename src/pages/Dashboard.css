@@ -9,7 +9,8 @@
     display:flex;
     justify-content:space-between;
   }
-  .buttons button{
-   
-    width:25%;
+  .buttons button{   
+    width:100%;
+    font-size:40px;
+    padding:15px;
   }

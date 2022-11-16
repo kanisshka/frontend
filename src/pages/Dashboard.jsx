@@ -2,6 +2,8 @@ import React from 'react';
 import "./Dashboard.css";
 import Card from "../components/Card";
 import Topbar from '../components/Topbar';
+import {Link } from "react-router-dom";
+
 const Dashboard = () => {
     return (
         <>
@@ -13,8 +15,12 @@ const Dashboard = () => {
                     <Card />
                 </div>
                 <div className="buttons">
+                <Link to="/marketplace">
                     <button>MARKET</button>
+                    </Link>
+                    <Link to="/game">
                     <button>PLAY</button>
+                    </Link>
                 </div>
             </div>
         </>
