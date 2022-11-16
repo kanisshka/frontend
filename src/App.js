@@ -1,4 +1,3 @@
-import './App.css';
 import Game from "./pages/Game";
 import MarketPlace from "./pages/MarketPlace";
 import Dashboard from "./pages/Dashboard";
@@ -11,12 +10,11 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-          <Route index element={<Home/>}/>
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="game" element={<Game />} />
-          <Route path="marketplace" element={<MarketPlace />} />
-          <Route path="finish" element={<Finish />} />
+        <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/game" element={<Game />} />
+          <Route exact path="/marketplace" element={<MarketPlace />} />
+          <Route exact path="/finish" element={<Finish />} />
       </Routes>
     </BrowserRouter>
     </>

@@ -16,7 +16,7 @@ button {
     font-size: 50px;
     cursor: pointer;
     padding: 5px;
-    border-raidus: 78px;
+    border-radius: 78px;
     border: 5px dashed whitesmoke;
     background: #181818;
     color: white;
@@ -32,7 +32,7 @@ h2 {
 .blink-soft {
     animation: blinker 1.5s linear infinite;
   }
-  img {
+  .dino {
     width: 276px;
     margin: -90px 0 50px 0;
 }
