@@ -53,7 +53,7 @@ const Card = () => {
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
       <div className='section-center'>
         {slide.map((slideframe, index) => {
-          const { name, power, health, image } = slideframe;
+          const { name, jump, health,speed, image } = slideframe;
           { console.log({ slideframe }) }
           let position = "nextSlide";
           if (index === current) {
@@ -68,19 +68,19 @@ const Card = () => {
                 <div className='div1'>
                   <img className='card-image' src={image} alt={name} /></div>
                 <div className='div2'>
-                  <h3>Statistics</h3>
+                  <h3>{name}</h3>
                   <div className="progresses">
                     <div className="sub-progress">
                       <h4>Health</h4>
-                      <Progress done="30" />
+                      <Progress done={health} />
                     </div>
                     <div className="sub-progress">
                       <h4>Speed</h4>
-                      <Progress done="80" />
+                      <Progress done={speed} />
                     </div>
                     <div className="sub-progress">
                       <h4>Jump</h4>
-                      <Progress done="50" />
+                      <Progress done={jump} />
                     </div>
                   </div>
 
@@ -94,7 +94,4 @@ const Card = () => {
     </section>
   );
 };
-// <div class="w3-light-grey w3-round">
-// <div class="w3-container w3-round w3-blue" style="width:25%">25%</div>
-// </div>
 export default Card
