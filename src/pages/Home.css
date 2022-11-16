@@ -1,0 +1,43 @@
+
+body{
+    background-color: #000000;
+    font-family: 'Space Mono';
+}
+.main{
+    text-align:center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button {
+    width: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 5px;
+    border-raidus: 78px;
+    border: 5px dashed whitesmoke;
+    background: #181818;
+    color: white;
+}
+h1 {
+    margin: -102px 0 139px 0;
+    font-size: 83px;
+}
+h2 {
+    font-size: 30px;
+    margin: 70px 0 0 0;
+}
+.blink-soft {
+    animation: blinker 1.5s linear infinite;
+  }
+  img {
+    width: 276px;
+    margin: -90px 0 50px 0;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
