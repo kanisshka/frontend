@@ -1,0 +1,19 @@
+.finish{
+    display:flex;
+    flex-direction:column;
+}
+.finish-head h1{
+    color:black;
+    font-size:20vh;
+    display:flex;
+    justify-content:center;
+}
+.scoreboard{
+    border:1px solid black;
+    display:flex;
+    text-align:center;
+    flex-direction:column;
+position: relative;
+    width:30%;
+    left:50%;
+}
