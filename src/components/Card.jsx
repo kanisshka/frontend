@@ -1,41 +1,68 @@
-import React , {useState} from 'react'
-import {SliderData} from "./SliderData"
+import React, { useEffect, useState } from 'react'
+import { SliderData } from "./SliderData"
 import "./Card.css";
-import { FaArrowAltCircleRight , FaArrowAltCircleLeft } from 'react-icons/fa';
-const Card = ({slides}) => {
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+const Card = () => {
+  const [slide] = useState(SliderData);
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
-
+ 
+  useEffect(() => {
+    const lastIndex = slide.length - 1;
+    if (current < 0) {
+      setCurrent(lastIndex);
+    }
+    if (current > lastIndex) {
+      setCurrent(0);
+    }
+  }, [current, slide]);
+ 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === slide.length - 1 ? 0 : current + 1);
   };
-
+ 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === 0 ? slide.length - 1 : current - 1);
   };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
+ 
+  if (!Array.isArray(slide) || slide.length <= 0) {
     return null;
   }
-
+ 
   return (
     <section className='slider'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
-            )}
-          </div>
-        );
-      })}
+      <div className='section-center'>
+        {slide.map((slideframe, index) => {
+          const { name, power, health, image } = slideframe;
+          { console.log({ slideframe }) }
+          let position = "nextSlide";
+          if (index === current) {
+            position = "activeSlide";
+          }
+          if (index === current - 1 || (current === 0 && index === slide.length - 1)) {
+            position = "lastSlide";
+          }
+          return (
+            <article className={position} key={index}>
+              <div className="maincontainer">
+              <div className='div1'>
+                <img className='card-image' src={image} alt={name} /></div>
+              <div className='div2'>
+                <h2 style={{ color: 'black', fontSize: '900px', zIndex: '20' }}>{name}</h2>
+                <p>{power}</p>
+                <p>{health}</p>
+              </div>
+              </div>
+            </article>
+ 
+          );
+        })}
+      </div>
     </section>
   );
 };
-
+// <div class="w3-light-grey w3-round">
+// <div class="w3-container w3-round w3-blue" style="width:25%">25%</div>
+// </div>
 export default Card

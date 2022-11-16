@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Dashboard.css";
-import { SliderData } from "../components/SliderData";
 import Card from "../components/Card";
 import Topbar from '../components/Topbar';
 const Dashboard = () => {
@@ -11,7 +10,7 @@ const Dashboard = () => {
                     <Topbar />
                 </div>
                 <div className="card-dashboard">
-                    <Card slides={SliderData} />
+                    <Card />
                 </div>
                 <div className="buttons">
                     <button>MARKET</button>
@@ -21,5 +20,5 @@ const Dashboard = () => {
         </>
     )
 }
-
+ 
 export default Dashboard
