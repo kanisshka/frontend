@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Game.css'
+import { Redirect, useNavigate } from 'react-router-dom'
+// import { useRouter } from 'next/router';
 import Topbar from '../components/Topbar'
+// import {useNavigate} from 'react-router-dom';
 const Game = () => {
+  const navigate = useNavigate()
+  const [left,setLeft] = useState(3);
+
+  var timer;
+  useEffect(()=>{
+    timer = setInterval(()=>{
+      setLeft(left-1);
+      if(left==1){
+        navigate('/finish')
+        clearInterval(timer)
+        // setLeft(1); 
+      }
+    },500)
+
+    return()=> clearInterval(timer);
+  });
   return (
     <>
     <div className="head">
                     <Topbar />
                 </div>
     <div className="game-loading">
-    <div className="counter"><h1>3</h1></div>
+    <div className="counter"><h1>{left}</h1></div>
     <div className="powerups-bottombar">
       <p>2x Speed</p>
       <p>2x Jump</p>

@@ -11,14 +11,13 @@ const [present,setPresent] = useState("powerup");
                 </div>
       <div className='nav'>
         <ul>
-        <li class="active"><a onClick={()=>setPresent("powerup")}><Link to='/marketplace/powerup'>Power-Up</Link></a></li> 
+        <li class="active"><a onClick={()=>setPresent("powerup")}>Power-Up</a></li> 
           <li><a onClick={()=>setPresent("sprite")} href="">Sprite</a></li>
           <li><a onClick={()=>setPresent("charactertistics")} href="">Characteristics</a></li>
         </ul>
       </div>
       <div className='compont'>
-        if(active==="First")
-       
+         
       </div>
     </>
   )
