@@ -21,18 +21,18 @@ button {
     background: #181818;
     color: white;
 }
-h1 {
+.main h1 {
     margin: -102px 0 139px 0;
     font-size: 83px;
 }
-h2 {
+.main h2 {
     font-size: 30px;
     margin: 70px 0 0 0;
 }
 .blink-soft {
     animation: blinker 1.5s linear infinite;
   }
-  .dino {
+.dino {
     width: 276px;
     margin: -90px 0 50px 0;
 }

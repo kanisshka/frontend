@@ -1,0 +1,25 @@
+.topbar{
+    position:sticky;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    color:white;
+    align-items: center;
+    margin-bottom:20px;
+}
+.user{
+    padding-right:20px;
+}
+.user img{
+    width:30px;
+    border:2px solid white;
+    border-radius:50%;
+    cursor:pointer;
+    
+}
+.coins{
+    padding-right:20px;
+}
+.coins h2{
+    font-size:20px;
+}

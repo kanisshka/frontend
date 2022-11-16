@@ -1,14 +1,14 @@
+.dashboard{
+  position: relative;
+}
 .slider {
-    position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .image {
-    width: 1000px;
-    height: 600px;
+    width: 50vw;
     border-radius: 10px;
   }
   
@@ -43,4 +43,15 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+  }
+  .buttons{
+    position :fixed;
+    width: 100%;
+    bottom:0;
+    display:flex;
+    justify-content:space-between;
+  }
+  .buttons button{
+   
+    width:25%;
   }
