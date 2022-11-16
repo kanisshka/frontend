@@ -17,7 +17,7 @@ const Game = () => {
         clearInterval(timer)
         // setLeft(1); 
       }
-    },500)
+    },1000)
 
     return()=> clearInterval(timer);
   });
@@ -27,7 +27,7 @@ const Game = () => {
                     <Topbar />
                 </div>
     <div className="game-loading">
-    <div className="counter"><h1>{left}</h1></div>
+    <div className="counter"><h1 className='countervalue'>{left}</h1></div>
     <div className="powerups-bottombar">
       <p>2x Speed</p>
       <p>2x Jump</p>
