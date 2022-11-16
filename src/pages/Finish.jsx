@@ -8,10 +8,10 @@ const Finish = () => {
       <div className="head">
         <Topbar />
       </div>
-      <div className="finish-head"><h1>Game Over</h1></div>
+      <div className="finish-head"><h1>GAME OVER</h1></div>
       <div className="scoreboard">
-        <p className="score">Score:{12}</p>
-        <p className="coins">Coins::{6}</p>
+        <p className="score">SCORE:{12}</p>
+        <p className="coins1">COINS:{6}</p>
       </div>
     </div>
       
