@@ -5,7 +5,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 const Card = () => {
   const [slide] = useState(SliderData);
   const [current, setCurrent] = useState(0);
- 
+
   useEffect(() => {
     const lastIndex = slide.length - 1;
     if (current < 0) {
@@ -15,19 +15,38 @@ const Card = () => {
       setCurrent(0);
     }
   }, [current, slide]);
- 
+
   const nextSlide = () => {
     setCurrent(current === slide.length - 1 ? 0 : current + 1);
   };
- 
+
   const prevSlide = () => {
     setCurrent(current === 0 ? slide.length - 1 : current - 1);
   };
- 
+
   if (!Array.isArray(slide) || slide.length <= 0) {
     return null;
   }
- 
+  const Progress = ({ done }) => {
+    const [style, setStyle] = React.useState({});
+
+    setTimeout(() => {
+      const newStyle = {
+        opacity: 1,
+        width: `${done}%`
+      }
+
+      setStyle(newStyle);
+    }, 200);
+
+    return (
+      <div className="progress">
+        <div className="progress-done" style={style}>
+          {done}%
+        </div>
+      </div>
+    )
+  }
   return (
     <section className='slider'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
@@ -46,16 +65,29 @@ const Card = () => {
           return (
             <article className={position} key={index}>
               <div className="maincontainer">
-              <div className='div1'>
-                <img className='card-image' src={image} alt={name} /></div>
-              <div className='div2'>
-                <h2 style={{ color: 'black', fontSize: '900px', zIndex: '20' }}>{name}</h2>
-                <p>{power}</p>
-                <p>{health}</p>
-              </div>
+                <div className='div1'>
+                  <img className='card-image' src={image} alt={name} /></div>
+                <div className='div2'>
+                  <h3>Statistics</h3>
+                  <div className="progresses">
+                    <div className="sub-progress">
+                      <h4>Health</h4>
+                      <Progress done="30" />
+                    </div>
+                    <div className="sub-progress">
+                      <h4>Speed</h4>
+                      <Progress done="80" />
+                    </div>
+                    <div className="sub-progress">
+                      <h4>Jump</h4>
+                      <Progress done="50" />
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </article>
- 
+
           );
         })}
       </div>

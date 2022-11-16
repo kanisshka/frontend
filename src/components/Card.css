@@ -59,22 +59,29 @@
     user-select: none;
   }
   .maincontainer{
+    height: 100%;
       background-color: blue;
       display: flex;
       flex-direction: row;
   }
   .card-image{
       width: 22vw;
-   
+      margin-top: 40%;
+      margin-left:10%;
   }
   .div1{
-      background-color: yellowgreen;
-      text-align: center;
+      background-color: rgb(255, 255, 255);
+      text-align: center;      
+    
   }
   .div2{
-      background-color:rgb(1, 81, 49);
+      background-color:rgb(255, 255, 255);
+      width: 100%;
   }
-   
+   .div2 h3{
+    margin-top: 5%;
+    font-size: 40px;
+   }
   .slide {
     opacity: 0;
     transition-duration: 1s ease;
@@ -85,4 +92,41 @@
     transition-duration: 1s;
     transform: scale(1.08);
   }
-  
+  .progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #0c0c0c, #0e0c0b);
+	box-shadow: 0 3px 3px -5px #363636, 0 2px 5px #2e2e2e;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0; 
+	transition: 1s ease 0.3s;
+}
+.progresses{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top:10%;
+}
+.sub-progress{
+    display:flex;
+    flex-direction: row;
+}
+.progresses h4{
+    color:black;
+    font-size: 15px;
+    margin-right:5%;
+}
