@@ -61,7 +61,7 @@
   }
   .maincontainer{
       height: 100%;
-      background: linear-gradient(#bbb, #000);
+      background: linear-gradient(to right,rgba(169, 167, 167, 0.769) 20%, #000);
       display: flex;
       flex-direction: row;
 
@@ -78,6 +78,8 @@
       width: 100%;
   }
    .div2 h3{
+    text-transform: uppercase;
+    letter-spacing: 5px;
     margin-top: 1%;
     margin-bottom: 3%;
     font-size: 40px;
@@ -97,7 +99,7 @@
 	background-color: white;
 	border-radius: 20px;
 	position: relative;
-	margin: 15px 0;
+	margin: 21px 0 0 0px;
 	height: 30px;
 	width: 300px;
 }

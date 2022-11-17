@@ -5,7 +5,7 @@ export const SliderData = [
     health:'40',
     jump:'20',
     image:
-      '../assets/dino.png'
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   },
   {
     name:'dino2',
@@ -13,7 +13,7 @@ export const SliderData = [
     health:'40',
     jump:'20',
     image:
-    '../assets/dino.png'
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   },
   {
     name:'dino3',
@@ -21,7 +21,7 @@ export const SliderData = [
     health:'47',
     jump:'20',
     image:
-    '../assets/dino.png'
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   },
   {
     name:'dino4',
@@ -29,7 +29,7 @@ export const SliderData = [
     health:'49',
     jump:'20',
     image:
-    '../assets/dino.png'
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   },
   {
     name:'dino5',
@@ -37,6 +37,6 @@ export const SliderData = [
     health:'49',
     jump:'20',
     image:
-    '../assets/dino.png'
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   }
 ];
