@@ -61,7 +61,7 @@
   }
   .maincontainer{
       height: 100%;
-      background-color: black;
+      background-color: #7d7d7d;
       display: flex;
       flex-direction: row;
 
