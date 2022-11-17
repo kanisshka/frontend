@@ -34,13 +34,13 @@ button:hover{
     font-size: 30px;
     margin: 70px 0 0 0;
 }
-.blink-soft {
-    animation: blinker 1.5s linear infinite;
-  }
 .dino {
     width: 276px;
     margin: -90px 0 50px 0;
 }
+.blink-soft {
+    animation: blinker 1.5s linear infinite;
+  }
 @keyframes blinker {
     50% {
       opacity: 0;
