@@ -1,8 +1,11 @@
 import React from 'react'
+import Marketcard from './Marketcard'
 
 const Powerup = () => {
   return (
-    <div>Powerup</div>
+   <> <Marketcard/>
+    <Marketcard/>
+    </>
   )
 }
 

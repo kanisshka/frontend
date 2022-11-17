@@ -42,3 +42,10 @@
   letter-spacing: 0.2em;
   font-size: 25px;
 }
+.compont{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

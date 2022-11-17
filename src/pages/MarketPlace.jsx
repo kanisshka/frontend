@@ -7,8 +7,10 @@ import Sprite from '../components/Sprite';
 import Characteristics from '../components/Characteristics';
 const MarketPlace = () => {
   const [present, setPresent] = useState('powerup');
+  // const[act,setAct] = useState('');
   let currentCompo;
   if (present === 'powerup') {
+    // setAct('active');
     currentCompo = <Powerup />;
   }
   else if (present === 'sprite') {
@@ -25,7 +27,7 @@ const MarketPlace = () => {
       </div>
       <div className='nav'>
         <ul>
-          <li class="active"><a onClick={() => setPresent("powerup")}>Power-Up</a></li>
+          <li ><a onClick={() => setPresent("powerup")}>Power-Up</a></li>
           <li><a onClick={() => setPresent("sprite")} >Sprite</a></li>
           <li><a onClick={() => setPresent("charactertistics")} >Characteristics</a></li>
         </ul>
