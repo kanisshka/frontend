@@ -14,6 +14,11 @@ function Modal({ setOpenModal }) {
             X
           </button>
         </div>
+        <div className='divide'>
+        <div>
+            <img src='../'/>
+        </div>
+        <div>
         <div className="title">
           <h1>Are You Sure You Want to Continue?</h1>
         </div>
@@ -21,15 +26,9 @@ function Modal({ setOpenModal }) {
           <p>The next page looks amazing. Hope you want to go there!</p>
         </div>
         <div className="footer">
-          <button
-            onClick={() => {
-              setOpenModal(false);
-            }}
-            id="cancelBtn"
-          >
-            Cancel
-          </button>
-          <button>Continue</button>
+          <button>Buy Now</button>
+        </div>
+        </div>
         </div>
       </div>
     </div>
