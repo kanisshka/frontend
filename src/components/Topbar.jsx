@@ -13,8 +13,8 @@ const Topbar = () => {
                 <div className="user">
                     <img src={user} alt="" />
                     <ul className="dropdown-content">
-                        <li>Profile</li>
-                        <li>Logout</li>
+                        <li><a href="" >Profile</a></li>
+                        <li><a href="/" >Logout</a></li>
 
                     </ul>
             </div>
