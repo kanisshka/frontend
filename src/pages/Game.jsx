@@ -22,10 +22,7 @@ const Game = () => {
     return()=> clearInterval(timer);
   });
   return (
-    <>
-    <div className="head">
-                    <Topbar />
-                </div>
+    <>    
     <div className="game-loading">
     <div className="counter"><h1 className='countervalue'>{left}</h1></div>
     <div className="powerups-bottombar">

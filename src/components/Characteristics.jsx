@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Marketcard from './Marketcard'
 const Characteristics = () => {
   return (
-    <div>Characteristics</div>
+    <>
+    <Marketcard title={"ABC Charac"}/>
+    <Marketcard title={"FGH Charac"}/>
+    </>
   )
 }
 

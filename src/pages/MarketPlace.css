@@ -3,9 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
-  /* border-bottom: 3px solid black; */
-
 }
 
 .nav ul {
@@ -46,6 +43,6 @@
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }

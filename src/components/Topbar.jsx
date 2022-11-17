@@ -8,7 +8,7 @@ const Topbar = () => {
     return (
         <>
             <div className="topbar">
-                <button className='back' onClick={() => navigate(-1)}>BACK</button>
+                <button className='back' onClick={() => navigate("/")}>BACK</button>
                 <div className="coins"><h2>Coins:{123}</h2></div>
                 <div className="user">
                     <img src={user} alt="" />

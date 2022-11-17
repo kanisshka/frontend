@@ -3,8 +3,9 @@ import Marketcard from './Marketcard'
 
 const Powerup = () => {
   return (
-   <> <Marketcard/>
-    <Marketcard/>
+   <> 
+   <Marketcard title={"2X SPEED"}/>
+    <Marketcard title={"2X HEALTH"}/>
     </>
   )
 }
