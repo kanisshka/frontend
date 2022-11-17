@@ -15,7 +15,7 @@ const Powerup = () => {
       title={"2X SPEED"} /> 
       </a>
       <Marketcard title={"2X HEALTH"} />
-      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+      {modalOpen && <Modal title1={"Get 2x Health"} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
     </>
   )
 }

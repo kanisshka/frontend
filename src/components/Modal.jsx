@@ -1,7 +1,7 @@
 import React from 'react'
 import './Modal.css';
 
-function Modal({ setOpenModal }) {
+function Modal({ setOpenModal,title1,body1 }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -15,15 +15,15 @@ function Modal({ setOpenModal }) {
           </button>
         </div>
         <div className='divide'>
-        <div>
-            <img src='../'/>
+        <div className='leftdiv'>
+            <img className='booster' src="https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png" alt="" />
         </div>
-        <div>
+        <div className='rightdiv' >
         <div className="title">
-          <h1>Are You Sure You Want to Continue?</h1>
+          <h1>{title1}</h1>
         </div>
         <div className="body">
-          <p>The next page looks amazing. Hope you want to go there!</p>
+          <p>{body1}</p>
         </div>
         <div className="footer">
           <button>Buy Now</button>
