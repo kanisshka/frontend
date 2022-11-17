@@ -1,8 +1,26 @@
-import React from 'react'
+import React , {useEffect}from 'react'
 import './Home.css';
-import {Link } from "react-router-dom";
+import {Link, Navigate } from "react-router-dom";
 import dino from '../assets/dino.png';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const keyDownHandler = event => {
+      console.log('User pressed: ', event.key);
+
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        navigate('/dashboard');
+      }
+    };
+    document.addEventListener('keydown', keyDownHandler);
+
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  }, []);
+
   return (
     <>
     <div className='main'>
