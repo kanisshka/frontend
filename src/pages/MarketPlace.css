@@ -1,74 +1,48 @@
 .nav {
   position: relative;
-  padding-bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-top: 4%;
+  /* border-bottom: 3px solid black; */
+
 }
-/* .line {
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  margin: 10px 0 0 0;
-  background: #ff1847;
-} */
-ul {
+
+.nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
+  
 }
-li {
+.nav li {
   margin: 0 40px 0 0;
   opacity: 0.4;
   transition: all 0.4s ease;
 }
-li:hover {
+.nav li:hover {
   opacity: 0.7;
 }
-li.active {
+.nav li.active {
   opacity: 1;
 }
-li:last-child {
+.nav li:last-child {
   margin-right: 0;
 }
-a {
+.nav a {
+  padding-left: 11px;
+    border-right: solid black;
+    border-left: solid black;
+    padding-right: 11px;
   text-decoration: none;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
   letter-spacing: 0.2em;
-  font-size: 14px;
+  font-size: 25px;
 }
-/* .underline {
-    position: relative;
+.nav a:active,a:hover,a:after{
+  background: #000;
+  color: white;
 }
-    .underline:before {
-      width: 50%;
-      height: 0.3rem;
-      position: absolute;
-      content: "";
-      left: 0;
-      background: #fff;
-      bottom: -0.5rem;
-      border-radius: 0.3rem;
-      transform-origin: left center;
-    }
-  
-    .underline--bounce:before {
-        animation: bouncey-line 1s ease-in-out infinite alternate;
-    }
-  
-  @keyframes bouncey-line {
-    0% {
-      transform: translateX(100vw) scaleX(2);
-    }
-    50% {
-      transform: translateX(0) scaleX(0.5);
-    }
-    to {
-      transform: scaleX(1);
-    }
-  } */
