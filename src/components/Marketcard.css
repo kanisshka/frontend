@@ -60,3 +60,9 @@
     padding: 1.2em;
     margin-top: 3%;
   }
+
+  /* powerup */
+
+  .modalclass{
+    width:unset;
+  }
