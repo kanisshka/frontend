@@ -42,7 +42,3 @@
   letter-spacing: 0.2em;
   font-size: 25px;
 }
-.nav a:active,a:hover,a:after{
-  background: #000;
-  color: white;
-}

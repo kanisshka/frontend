@@ -17,12 +17,12 @@ button {
     cursor: pointer;
     padding: 5px;
     border-radius: 78px;
-    border: 5px dashed black;
+    border: 5px solid black;
     background: #bfbfbf	;
     color: black;
 }
 button:hover{
-    background: black	;
+    background: black;
     color: white;
 }
 .main h1 {
