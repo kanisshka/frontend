@@ -80,9 +80,13 @@
     display: flex;
     flex-direction: row;
   }
-  .booster{
+  /* .booster{
     width:100%;
-  }
+  } */
+  .booster {
+    margin-top: 0%;
+    width: 100%;
+}
   .leftdiv{
     display: flex;
     justify-content: center;
