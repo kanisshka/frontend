@@ -39,25 +39,28 @@
        position: absolute;
        z-index: 1;
        right: 32%;
-       top: 50%;
+       top: 90%;
        color: white;
        text-align: center;
-       font-style: 19px;
   }
   .dropdown-content li a{
     text-decoration: none;
     color: rgb(252, 249, 249);
+    font-size:35px;
+
   }
   .dropdown-content li:hover{
     background: white;
     color: black;    
+    font-size:35px;
+
   }
   .dropdown-content li{
     border-bottom: 1px grey solid;    
   }
   .dropdown-content li a:hover{
     color: black;  
-    padding: 12px;  
+    /* padding: 12px;   */
 
   }
   .user:hover .dropdown-content {

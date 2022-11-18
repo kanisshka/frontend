@@ -22,7 +22,7 @@ const Powerup = () => {
         console.log("true");
         setTitl("2X COIN")
       }} ><Marketcard title={"2X COIN"} />   </a>
-      {modalOpen && <Modal title1={titl} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
+      {modalOpen && <Modal title1={titl} body1={"Buy this to get double Score"} setOpenModal={setModalOpen} />}
     </>
   )
 }
