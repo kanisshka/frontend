@@ -11,10 +11,10 @@
     display: flex; 
       margin-top: 10%;
   }
-  .booster{
-    margin-top: 25%;
-    height: 25vh;
-  }
+  .booster {
+    margin-top: 5%;
+    height: 80%;
+}
   .modalContainer .title {
     display: inline-block;
     text-align: center;

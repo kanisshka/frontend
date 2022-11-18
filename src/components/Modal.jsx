@@ -1,7 +1,7 @@
 import React from 'react'
 import './Modal.css';
 
-function Modal({ setOpenModal,title1,body1 }) {
+function Modal({ setOpenModal,title1,body1,Im1 }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -16,7 +16,7 @@ function Modal({ setOpenModal,title1,body1 }) {
         </div>
         <div className='divide'>
         <div className='leftdiv'>
-            <img className='booster' src="https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png" alt="" />
+            <img className='booster' src={Im1} alt="" />
         </div>
         <div className='rightdiv' >
         <div className="title">
