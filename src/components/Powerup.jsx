@@ -11,18 +11,18 @@ const Powerup = () => {
       onClick={() => {
         setModalOpen(true);
         console.log("true");
-        setTitl("2X SPEED");
+        setTitl("2X SCORE");
       }} >
       <Marketcard
-      title={"2X SPEED"} /> 
+      title={"2X SCORE"} /> 
       </a>
     <a className='modalclass'
       onClick={() => {
         setModalOpen(true);
         console.log("true");
-        setTitl("2X HEALTH")
-      }} ><Marketcard title={"2X HEALTH"} />   </a>
-      {modalOpen && <Modal title1={titl} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
+        setTitl("2X COIN")
+      }} ><Marketcard title={"2X COIN"} />   </a>
+      {modalOpen && <Modal title1={titl} body1={"Buy this to get double Score"} setOpenModal={setModalOpen} />}
     </>
   )
 }

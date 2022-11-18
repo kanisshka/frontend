@@ -82,7 +82,7 @@
     letter-spacing: 5px;
     margin-top: 1%;
     margin-bottom: 3%;
-    font-size: 40px;
+    font-size: 85px;
     color:white;
    }
   .slide {
@@ -99,15 +99,15 @@
 	background-color: white;
 	border-radius: 20px;
 	position: relative;
-	margin: 21px 0 0 0px;
-	height: 30px;
+	margin: 0!important;
+	height: 40px;
 	width: 300px;
 }
 
 .progress-done {
 	background: linear-gradient(to left, black,#404040			);
 	box-shadow: 0 3px 3px -5px #363636, 0 2px 5px #2e2e2e;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	color: white;
 	display: flex;
 	align-items: center;
@@ -126,12 +126,12 @@
 .sub-progress{
     display:flex;
     flex-direction: row;
+    margin-bottom: 24px;
 }
-.progresses h4{
-    color:white;
-    font-size: 17px;
-    letter-spacing:1px;
-    
+.progresses h4 {
+  color: black!important;
+  font-size: 40px!important;
+  letter-spacing: 1px!important;
 }
 .speed{
     margin-right:18px;
