@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 import Modalsprite from './Modalsprite';
-import Marketcard from './Marketcard'
+import Spriteimage from './Spriteimage';
 const Sprite = () => {
   const [titl,setTitl] = useState("");
   const [health,setHealth] = useState(0);
@@ -21,8 +21,8 @@ const Sprite = () => {
         setJump(60);
         setSpeed(40);
       }} >
-    <Marketcard title={"SPRITE 1"}/></a>
-    <a className='modalclass'
+    <Spriteimage title={"SPRITE 1"}/></a>
+    {/* <a className='modalclass'
       onClick={() => {
         setModalOpen(true);
         console.log("true");
@@ -30,8 +30,8 @@ const Sprite = () => {
         setHealth(20);
         setJump(40);
         setSpeed(40);
-      }} ><Marketcard title={"SPRITE 2"}/>
-</a>
+      }} ><Spriteimage title={"SPRITE 2"}/>
+</a> */}
 {modalOpen && <Modalsprite title1={titl} health={health} speed={speed} jump={jump} setOpenModal={setModalOpen} />}
 </>
   )
