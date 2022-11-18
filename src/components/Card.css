@@ -97,7 +97,7 @@
   }
   .progress {
 	background-color: white;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	position: relative;
 	margin: 0!important;
 	height: 40px;
