@@ -1,7 +1,11 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: white;
-    font-family: 'Space Mono';
+    font-family: 'VT323';
     /* font-family: 'Press Start 2P', cursive; */
 }
 .main{
@@ -13,13 +17,14 @@ body{
     transform: translate(-50%,-50%);
 }
 button {
+    font-family: 'VT323', monospace;
     width: 50%;
     font-size: 50px;
     cursor: pointer;
     padding: 5px;
-    border-radius: 78px;
-    border: 5px solid black;
-    background: #bfbfbf	;
+    /* border-radius: 78px; */
+    border: 1px solid black;
+    background: #ffffff	;
     color: black;
 }
 button:hover{
@@ -27,8 +32,8 @@ button:hover{
     color: white;
 }
 .main h1 {
-    margin: -102px 0 139px 0;
-    font-size: 83px;
+    margin: -100px 0 100px 0;
+    font-size: 23vh;
 }
 .main h2 {
     font-size: 30px;

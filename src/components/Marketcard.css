@@ -2,8 +2,8 @@
     /* background: linear-gradient(#bbb, #000);
      */
      background-color: black;
-    width: 24em;
-    height: 28em;
+     width: 23vw;
+     height: 55vh;
     border-radius: 0.6em;
     margin: 1%;
     display: flex;
@@ -58,7 +58,7 @@
   
   .card-body {
     padding: 1.2em;
-    margin-top: 3%;
+    margin-top: 13%;
   }
 
   /* powerup */

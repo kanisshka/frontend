@@ -6,27 +6,28 @@
     color:black;
     align-items: center;
 }
-.back{
-    width:10%;
-    margin-right:75vw;
-    font-size:20px;
+.back {
+  width: 29%;
+  padding: 11px 12px 10px 12px;
+  margin-right: 74vw;
+  font-size: 60px;
 }
 .user{
     padding-right:20px;
     position: relative;
   /* display: inline-block; */
 }
-.user img{
-    width:30px;
-    border:2px solid black;
-    border-radius:50%;
-    cursor:pointer;    
+.user img {
+  width: 43px;
+  /* border: 0 solid black; */
+  /* border-radius: 50%; */
+  cursor: pointer;
 }
 .coins{
     padding-right:20px;
 }
-.coins h2{
-    font-size:20px;
+.coins h2 {
+  font-size: 40px;
 }
   
   .dropdown-content {

@@ -1,8 +1,14 @@
 import React ,{useState} from 'react'
-import Modal from './Modal';
+import Modalsprite from './Modalsprite';
 import Marketcard from './Marketcard'
 const Sprite = () => {
   const [titl,setTitl] = useState("");
+  const [health,setHealth] = useState(0);
+  const [speed,setSpeed] = useState(0);
+  const [jump,setJump] = useState(0);
+
+
+
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
@@ -11,6 +17,9 @@ const Sprite = () => {
         setModalOpen(true);
         console.log("true");
         setTitl("SPRITE 1");
+        setHealth(20);
+        setJump(60);
+        setSpeed(40);
       }} >
     <Marketcard title={"SPRITE 1"}/></a>
     <a className='modalclass'
@@ -18,9 +27,12 @@ const Sprite = () => {
         setModalOpen(true);
         console.log("true");
         setTitl("SPRITE 2")
+        setHealth(20);
+        setJump(40);
+        setSpeed(40);
       }} ><Marketcard title={"SPRITE 2"}/>
 </a>
-{modalOpen && <Modal title1={titl} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
+{modalOpen && <Modalsprite title1={titl} health={health} speed={speed} jump={jump} setOpenModal={setModalOpen} />}
 </>
   )
 }

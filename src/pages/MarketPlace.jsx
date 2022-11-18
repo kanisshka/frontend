@@ -25,10 +25,6 @@ const spritefun =(sprite)=>{
   sprite.className="active";
   setPresent("sprite")
   }
-  const characfun =(charc)=>{
-    charc.className="active";
-    setPresent("charactertistics")
-    }
   return (
     <>
       <div className="head">
@@ -38,7 +34,6 @@ const spritefun =(sprite)=>{
         <ul>
           <li><a onClick={powerupfun}>Power-Up</a></li>
           <li><a onClick={spritefun}>Sprite</a></li>
-          <li><a onClick={characfun}>Characteristics</a></li>
         </ul>
       </div>
       <div className='compont'>

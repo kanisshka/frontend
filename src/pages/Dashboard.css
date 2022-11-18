@@ -9,8 +9,8 @@
     display:flex;
     justify-content:space-between;
   }
-  .dashboard .buttons button{   
-    width:100%;
-    font-size:40px;
-    padding:15px;
-  }
+  .dashboard .buttons button {
+    width: 100%;
+    font-size: 60px;
+    padding: 15px 10px 15px 10px;
+}
