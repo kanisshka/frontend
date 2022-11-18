@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Marketcard from './Marketcard'
 import Modal from './Modal';
 const Powerup = () => {
+  const [titl,setTitl] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -10,12 +11,18 @@ const Powerup = () => {
       onClick={() => {
         setModalOpen(true);
         console.log("true");
+        setTitl("2X SPEED");
       }} >
       <Marketcard
       title={"2X SPEED"} /> 
       </a>
-      <Marketcard title={"2X HEALTH"} />
-      {modalOpen && <Modal title1={"Get 2x Health"} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
+    <a className='modalclass'
+      onClick={() => {
+        setModalOpen(true);
+        console.log("true");
+        setTitl("2X HEALTH")
+      }} ><Marketcard title={"2X HEALTH"} />   </a>
+      {modalOpen && <Modal title1={titl} body1={"Buy this to get double heath"} setOpenModal={setModalOpen} />}
     </>
   )
 }
