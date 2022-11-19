@@ -13,7 +13,7 @@ const Game = () => {
     timer = setInterval(()=>{
       setLeft(left-1);
       if(left==1){
-        navigate('/finish')
+        navigate('/play')
         clearInterval(timer)
         // setLeft(1); 
       }

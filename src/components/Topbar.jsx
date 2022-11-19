@@ -2,8 +2,8 @@ import React from 'react'
 import './Topbar.css'
 import user from '../assets/user.png'
 import { useNavigate } from 'react-router-dom';
-
-const Topbar = () => {
+import { useGlobalState } from '../pages/address';
+const Topbar = (props) => {
     const navigate = useNavigate();
     return (
         <>
@@ -13,7 +13,7 @@ const Topbar = () => {
                 <div className="user">
                     <img src={user} alt="" />
                     <ul className="dropdown-content">
-                        <li><a href="" >Profile</a></li>
+                        <li><a href="" >{useGlobalState("address")}</a></li>
                         <li><a href="/" >Logout</a></li>
 
                     </ul>

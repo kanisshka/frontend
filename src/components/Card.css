@@ -61,9 +61,10 @@
   }
   .maincontainer{
       height: 100%;
-      background: linear-gradient(to right,rgba(169, 167, 167, 0.769) 20%, #000);
+      background: white;
       display: flex;
       flex-direction: row;
+
 
   }
   .card-image{

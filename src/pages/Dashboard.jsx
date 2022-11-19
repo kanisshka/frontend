@@ -3,13 +3,16 @@ import "./Dashboard.css";
 import Card from "../components/Card";
 import Topbar from '../components/Topbar';
 import {Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+    const address = useSelector((state)=>state.user.address);
+    console.log({address});
     return (
         <>
             <div className="dashboard">
                 <div className="head">
-                    <Topbar />
+                    <Topbar abcd = {props.abcd} />
                 </div>
                 <div className="card-dashboard">
                     <Card />
@@ -19,7 +22,7 @@ const Dashboard = () => {
                     <button>MARKET</button>
                     </Link>
                     <Link to="/game">
-                    <button>PLAY</button>
+                    <button >PLAY</button>
                     </Link>
                 </div>
             </div>
