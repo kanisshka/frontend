@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Marketcard from './Marketcard'
 import Modal from './Modal';
+import Spriteimage from './Spriteimage';
 
 const Powerup = () => {
   const [titl,setTitl] = useState("");
@@ -19,7 +20,7 @@ const [im,setIm]=useState("");
 
         setIm("https://res.cloudinary.com/rohangotwal/image/upload/v1668778466/Blog/2_2_fysmhp.png");
       }} >
-      <Marketcard
+      <Spriteimage img = {"https://res.cloudinary.com/rohangotwal/image/upload/v1668778466/Blog/2_2_fysmhp.png"}
       title={"2X SCORE"} /> 
       </a>
       <a className='modalclass'
@@ -30,7 +31,7 @@ const [im,setIm]=useState("");
         setIm("https://res.cloudinary.com/rohangotwal/image/upload/v1668778467/Blog/2_3_votqeu.png");
 
         setTitl("2X COIN")
-      }} ><Marketcard title={"2X COIN"} />   </a>
+      }} ><Spriteimage title={"2X COIN"} img = {"https://res.cloudinary.com/rohangotwal/image/upload/v1668825544/Blog/2_5_gqdeis.png"} />   </a>
       {modalOpen && <Modal title1={titl} Im1={im} body1={body} setOpenModal={setModalOpen} />}
     </>
   )

@@ -18,20 +18,10 @@ const Sprite = () => {
         console.log("true");
         setTitl("SPRITE 1");
         setHealth(20);
-        setJump(60);
-        setSpeed(40);
+        setJump(20);
+        setSpeed(20);
       }} >
-    <Spriteimage title={"SPRITE 1"}/></a>
-    {/* <a className='modalclass'
-      onClick={() => {
-        setModalOpen(true);
-        console.log("true");
-        setTitl("SPRITE 2")
-        setHealth(20);
-        setJump(40);
-        setSpeed(40);
-      }} ><Spriteimage title={"SPRITE 2"}/>
-</a> */}
+    <Spriteimage title={"SPRITE 1"} img={"https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png"}/></a>
 {modalOpen && <Modalsprite title1={titl} health={health} speed={speed} jump={jump} setOpenModal={setModalOpen} />}
 </>
   )

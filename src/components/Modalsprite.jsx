@@ -1,12 +1,12 @@
 import React from 'react'
 import './Modelsprite.css';
 import { useState } from 'react';
-
+import {setGlobalState as healthset} from '../pages/health.jsx'
 function Modalsprite({ setOpenModal,title1,health,speed,jump}) {
    const [health1, setHealth1] = useState(health);
    const [speed1, setSpeed1] = useState(speed);
    const [jump1, setJump1] = useState(jump);
-
+   const [im,setIm]=useState("");
     const Progress = ({ done }) => {
         const [style, setStyle] = React.useState({});
     
@@ -31,6 +31,8 @@ function Modalsprite({ setOpenModal,title1,health,speed,jump}) {
         if(health1<100){
           let v = health1 +20;
             setHealth1(v);
+            // 
+            healthset("health",40)
         }
     }
     const incSpeed=()=>{
@@ -52,6 +54,7 @@ function Modalsprite({ setOpenModal,title1,health,speed,jump}) {
           <button
             onClick={() => {
               setOpenModal(false);
+              setIm("");
             }}
           >
             X

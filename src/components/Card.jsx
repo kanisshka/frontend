@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { SliderData } from "./SliderData"
 import "./Card.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { useGlobalState as healthrate } from '../pages/health';
 const Card = () => {
   const [slide] = useState(SliderData);
   const [current, setCurrent] = useState(0);
@@ -47,6 +48,7 @@ const Card = () => {
       </div>
     )
   }
+
   return (
     <section className='slider'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
@@ -72,7 +74,7 @@ const Card = () => {
                   <div className="progresses">
                     <div className="sub-progress">
                       <h4 className='health'>Health</h4>
-                      <Progress  done={health} />
+                      <Progress  done={parseInt(healthrate("health"))} />
                     </div>
                     <div className="sub-progress">
                       <h4 className='speed'>Speed</h4>

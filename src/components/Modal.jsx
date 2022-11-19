@@ -1,7 +1,10 @@
 import React from 'react'
 import './Modal.css';
+import { useNavigate } from 'react-router-dom';
 
 function Modal({ setOpenModal,title1,body1,Im1 }) {
+  const navigate = useNavigate();
+  
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -26,7 +29,7 @@ function Modal({ setOpenModal,title1,body1,Im1 }) {
           <p>{body1}</p>
         </div>
         <div className="footer">
-          <button>Buy Now</button>
+          <button  onClick={() => navigate("/dashboard")}>Buy Now</button>
         </div>
         </div>
         </div>

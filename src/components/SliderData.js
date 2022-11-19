@@ -2,40 +2,16 @@ export const SliderData = [
   {
     name:'dino1',
     speed:'20',
+    health:'20',
+    jump:'20',
+    image:
+      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
+  },
+  {
+    name:'Coming Soon...',
+    speed:'40',
     health:'40',
-    jump:'20',
-    image:
-      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
-  },
-  {
-    name:'dino2',
-    speed:'20',
-    health:'40',
-    jump:'20',
-    image:
-      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
-  },
-  {
-    name:'dino3',
-    speed:'25',
-    health:'47',
-    jump:'20',
-    image:
-      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
-  },
-  {
-    name:'dino4',
-    speed:'23',
-    health:'49',
-    jump:'20',
-    image:
-      'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
-  },
-  {
-    name:'dino5',
-    speed:'29',
-    health:'49',
-    jump:'20',
+    jump:'40',
     image:
       'https://res.cloudinary.com/rohangotwal/image/upload/v1668677235/Blog/dino_j81o8g.png'
   }

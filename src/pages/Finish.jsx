@@ -3,6 +3,7 @@ import Topbar from '../components/Topbar';
 import './Finish.css'
 import {Link, useNavigate } from "react-router-dom";
 
+import { setGlobalState as setcoin , useGlobalState as getcoin } from '../pages/coin.jsx'
 const Finish = () => {
 const navigate = useNavigate();
 
@@ -11,6 +12,8 @@ const nav = () =>{
 }
 const rev = () =>{
   navigate("/dashboard");
+  setcoin("coin",100 + 10);
+
 }
   return (
     <>
@@ -22,8 +25,8 @@ const rev = () =>{
       <button onClick={nav} className='restart'>Restart</button>
       <button onClick={rev}className='restart'>Dashboard</button></div>
       <div className="scoreboard">
-        <p className="score">SCORE:{12}</p>
-        <p className="coins1">COINS:{6}</p>
+        <p className="score">SCORE:{1200}</p>
+        <p className="coins1">COINS:{10}</p>
       </div>
     </div>
       
